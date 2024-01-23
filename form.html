@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de costo VPS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Calculadora de costo VPS</h1>
+        <form method="post" action="calcular_costo.php">
+            <div class="form-group">
+                <label for="cpu">Cantidad de CPU (1-8)</label>
+                <input type="number" class="form-control" id="cpu" name="cpu" min="1" max="8" required>
+            </div>
+            <div class="form-group">
+                <label for="ram">Cantidad de RAM (en MB)</label>
+                <input type="number" class="form-control" id="ram" name="ram" min="512" max="16384" required>
+            </div>
+            <div class="form-group">
+                <label for="storage">Cantidad de almacenamiento (en GB)</label>
+                <input type="number" class="form-control" id="storage" name="storage" min="20" max="500" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular costo</button>
+        </form>
+    </div>
+</body>
+</html>
